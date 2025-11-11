@@ -39,7 +39,7 @@ function isFormValid() {
 function rightAnswer(index) {
     document.querySelector(`#q${index}Feedback`).innerHTML = "Correct!";
     document.querySelector(`#q${index}Feedback`).className = "bg-success text-white";
-    document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/checkmark.png' alt='Checkmark'>";
+    document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/checkmark.png' alt='checkmark'>";
     score += 10;
 }
 
@@ -159,3 +159,4 @@ document.querySelector("#totalAttempts").innerHTML = `Total Attempts: ${++attemp
 localStorage.setItem("total_attempts", attempts);
 
 }
+
